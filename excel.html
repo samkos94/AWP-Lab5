@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Functions</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="excel.html">Excel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Excel Functions</h1>
+        <p>Enter your numbers separated by spaces:</p>
+        <input type="text" id="numbers" placeholder="e.g. 23 67 98 90 56"><br>
+
+        <p>Select the function to apply:</p>
+        <input type="radio" id="autoSum" name="function" value="AutoSum" checked>
+        <label for="autoSum">AutoSum</label><br>
+        <input type="radio" id="average" name="function" value="Average">
+        <label for="average">Average</label><br>
+        <input type="radio" id="max" name="function" value="Max">
+        <label for="max">Max</label><br>
+        <input type="radio" id="min" name="function" value="Min">
+        <label for="min">Min</label><br>
+
+        <button type="button" onclick="myExcelFunc()">Calculate</button>
+
+        <h2>Result:</h2>
+        <div id="output">Result will be printed here</div>
+    </main>
+
+    <footer>
+        <p>ILAC & EFREI - HTML, CSS, and JavaScript Assignment - El Halfa Samy</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
